@@ -31,16 +31,13 @@ void Zadacha4()
     int numberC = Convert.ToInt32(Console.ReadLine());
     int max = numberA;
 
-        if ( numberB > numberA )
+        if (numberB > numberA)
         {
-            max = numberB;
-
+        max = numberB;
         }    
         if (numberC > numberA)
-
         {
-            max = numberC;
-        
+        max = numberC;
         }
         Console.WriteLine($"Max = {max}");
 }
