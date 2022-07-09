@@ -1,6 +1,7 @@
-﻿void Zadacha2() 
+﻿void Zadacha2()
 {
-    // Задача 2 Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+    // Задача 2 Напишите программу, которая на вход принимает два числа и выдаёт,
+    // какое число большее, а какое меньшее.
     Console.WriteLine("Введите число A: ");
     int numberA = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine("Введите число B: ");
@@ -19,28 +20,33 @@
     Console.WriteLine();
 }
 
-void Zadacha4() 
-{
-//  Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+    void Zadacha4()
+    {
+        Console.WriteLine("Введите число A: ");
+        int numberA = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите число B: ");
+        int numberB = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите число C: ");
+        int numberC = Convert.ToInt32(Console.ReadLine());
+        int max = numberA;
 
-    Console.WriteLine("Введите число A: ");
-    int numberA = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите число B: ");
-    int numberB = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите число C: ");
-    int numberC = Convert.ToInt32(Console.ReadLine());
-    int max = numberA;
+            if (numberB > numberA)
+            {
+            max = numberB;
+            }    
+            if (numberC > numberA)
+            {
+            max = numberC;
+            }
+            Console.WriteLine($"Max = {max}");
+    }
 
-        if (numberB > numberA)
-        {
-        max = numberB;
-        }    
-        if (numberC > numberA)
-        {
-        max = numberC;
-        }
-        Console.WriteLine($"Max = {max}");
-}
+//Zadacha2(); 
+//Zadacha4();
+
+
+
+
 
 
 
