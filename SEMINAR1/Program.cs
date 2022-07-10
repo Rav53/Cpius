@@ -41,6 +41,17 @@
             Console.WriteLine($"Max = {max}");
     }
 
+        Console.WriteLine("Введите число: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        if (number%2 == 0)
+        {
+          Console.WriteLine($"Четное = {number}");  
+        }
+        else
+        {Console.WriteLine($"Нечетное = {number}");}
+
+
+
 //Zadacha2(); 
 //Zadacha4();
 
