@@ -1,4 +1,10 @@
-﻿void Zadacha2()
+﻿//Zadacha2(); 
+//Zadacha4();
+//Zadacha6();
+//Zadacha8();
+
+
+void Zadacha2()
 {
     // Задача 2 Напишите программу, которая на вход принимает два числа и выдаёт,
     // какое число большее, а какое меньшее.
@@ -79,8 +85,6 @@ void Zadacha8()
         }
         Console.WriteLine("");
 }
-
-
 
 //Zadacha2(); 
 //Zadacha4();
