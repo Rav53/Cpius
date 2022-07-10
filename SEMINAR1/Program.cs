@@ -22,6 +22,9 @@
 
     void Zadacha4()
     {
+        //Напишите программу, которая принимает на вход три числа
+        // и выдаёт максимальное из этих чисел.
+
         Console.WriteLine("Введите число A: ");
         int numberA = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Введите число B: ");
@@ -43,6 +46,9 @@
 
 void Zadacha6()
     {
+        //Напишите программу, которая на вход принимает число и выдаёт,
+        //является ли число чётным (делится ли оно на два без остатка).
+         
          Console.WriteLine("Введите число: ");
         int number = Convert.ToInt32(Console.ReadLine());
         if (number%2 == 0)
