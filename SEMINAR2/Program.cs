@@ -34,12 +34,12 @@ void Zadacha15()
 //обозначающую день недели, и проверяет, является ли этот день выходным.
 
 
-    Console.WriteLine("Введите число от 1 до 7:");
+    Console.WriteLine("Введите номер дня недели от 1 до 7:");
     int day = Convert.ToInt32(Console.ReadLine());
 
     if (day < -1 || day > 7)
         {
-          Console.WriteLine("Введите число от 1 до 7:");  
+          Console.WriteLine("В неделе вообще то всего 7 дней! Перегрузка! Ошибка! Errrrrr=))");  
         }
         else if (day == 6 || day == 7)
         {
