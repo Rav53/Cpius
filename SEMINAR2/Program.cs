@@ -1,11 +1,13 @@
 ﻿//Zadacha13();
+Zadacha15();
 
 
+void Zadacha13()
+{
 //Задача 13: Напишите программу, которая с помощью деления
 //выводит третью цифру заданного числа или сообщает,
 //что третьей цифры нет.
-void Zadacha13()
-{
+
     Console.WriteLine("Введите число:");
     int x = Convert.ToInt32(Console.ReadLine());
     int result = Math.Abs(x);
@@ -24,6 +26,31 @@ void Zadacha13()
             Console.WriteLine($"Третье число = {result % 10}");
             }
 }
-     
+
+
+void Zadacha15()
+{     
+//Задача 15: Напишите программу, которая принимает на вход цифру,
+//обозначающую день недели, и проверяет, является ли этот день выходным.
+
+
+    Console.WriteLine("Введите число от 1 до 7:");
+    int day = Convert.ToInt32(Console.ReadLine());
+
+    if (day < -1 || day > 7)
+        {
+          Console.WriteLine("Введите число от 1 до 7:");  
+        }
+        else if (day == 6 || day == 7)
+        {
+            Console.WriteLine("Выходной");
+        }
+        else if (day >= 1 && day <= 5)
+        {
+            Console.WriteLine("Рабочий день");
+        }
+
+}
 //Zadacha13();
+//Zadacha15();
 
