@@ -21,6 +21,28 @@
     Console.WriteLine($"Чётных чисел:" + chetnum);
 }
 
+void FillArray(int[] array)
+{
+    int size = array.Length;
+    Random random = new Random();
+    for (int i = 0; i < size; i++)
+    {
+      array[i] = random.Next(100,1000);
+    }
+}
+
+void PrintArray(int[] array)
+{
+    int size = array.Length;
+    for (int i = 0; i < size; i++)
+    {
+      Console.Write(array[i] + "  ");
+    }
+    Console.WriteLine();
+}    
+
+
+
 //--------------------------------------------------------------
 
 void Zadacha36()
@@ -44,6 +66,8 @@ void Zadacha36()
     }
         Console.WriteLine($"Сумма чисел в нечётных позициях = " + sum);
 }
+
+
 
 //--------------------------------------------------------------
 void Zadacha38()
@@ -96,25 +120,6 @@ void PrintArray(Double[] array)
 
 }
 //Zadacha34();
-//Zadacha36();
-Zadacha38();
+Zadacha36();
+//Zadacha38();
 
-void FillArray(int[] array)
-{
-    int size = array.Length;
-    Random random = new Random();
-    for (int i = 0; i < size; i++)
-    {
-      array[i] = random.Next(100,1000);
-    }
-}
-
-void PrintArray(int[] array)
-{
-    int size = array.Length;
-    for (int i = 0; i < size; i++)
-    {
-      Console.Write(array[i] + "  ");
-    }
-    Console.WriteLine();
-}    
