@@ -1,47 +1,83 @@
-﻿
-//Задача 41: Пользователь вводит с клавиатуры M чисел.
-//Посчитайте, сколько чисел больше 0 ввёл пользователь.
-
-//Console.WriteLine("Введите несколько чисел: ");
-//int num = Convert.ToInt32(Console.ReadLine()); 
-
-    
-   // int[] array = new int[num];
-    
-   //int sum = 0;
-    //for (int i = 0; i < num; i++)
-   // {
-    //    if(array[i] > 0)
-   //     {
-   //     sum++;
-   //     }
-   // }
-   // Console.WriteLine($"Сумма положительных чисел:" + sum);
-            
-Console.Write($"Введи число М(количество чисел): ");
-int m = Convert.ToInt32(Console.ReadLine());
-int[] massiveNumbers = new int[m];
-
-void InputNumbers(int m)
+﻿void Zadacha41()
 {
-for (int i = 0; i < m; i++)
-  {
- Console.Write($"Введи {i+1} число: ");
- massiveNumbers[i] = Convert.ToInt32(Console.ReadLine());
-  }
+// Пользователь вводит с клавиатуры M чисел.
+// Посчитайте, сколько чисел больше 0 ввёл пользователь.
+
+Console.Write("Введите числа через запятую: ");
+int[] numbers = StringNum(Console.ReadLine());
+counterNum(numbers);
+
+
+void counterNum(int[] numbers)
+{
+int sum = 0;
+for (int i = 0; i < numbers.Length; i++)
+{
+    if (numbers[i] > 0)
+    {
+        sum++;
+    }
+}
+Console.WriteLine($"количество чисел больше <0> = {sum}");
 }
 
-
-int Comparison(int[] massiveNumbers)
+int[] StringNum(string input)
 {
- int count = 0;
- for (int i = 0; i < massiveNumbers.Length; i++)
-  {
- if(massiveNumbers[i] > 0 ) count += 1; 
-  }
- return count;
+    int count = 1;
+    for (int i = 0; i < input.Length; i++)
+    {
+        if (input[i] == ',')
+        {
+            count++;
+        }
+    }
+
+    int[] numbers = new int [count];
+    int index = 0;
+
+    for (int i = 0; i < input.Length; i++)
+    {
+        string temp = "";
+
+        while (input [i] != ',')
+        {
+        if(i != input.Length - 1)
+        {
+            temp += input [i].ToString();
+            i++;
+        }
+        else
+        {
+            temp += input [i].ToString();
+            break;
+        }
+        }
+        numbers[index] = Convert.ToInt16(temp);
+        index++;
+    }
+    return numbers;
+}
 }
 
-InputNumbers(m);
+void Zadacha43()
+{
+//Напишите программу, которая найдёт точку пересечения двух прямых,
+//заданных уравнениями y = k1 * x + b1, y = k2 * x + b2;
+//значения b1, k1, b2 и k2 задаются пользователем.
+Console.WriteLine("введите значение b1");
+double b1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("введите значение k1");
+double k1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("введите значение b2");
+double b2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("введите значение k2");
+double k2 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"Введено чисел больше 0: {Comparison(massiveNumbers)} ");
+double x = (-b2 + b1)/(-k1 + k2);
+double y = k2 * x + b2;
+
+Console.WriteLine($"Прямые пересекутся в точке с координатами X: {x}, Y: {y}");
+}
+
+//Zadacha41();
+Zadacha43();
