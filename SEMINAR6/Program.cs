@@ -79,5 +79,5 @@ double y = k2 * x + b2;
 Console.WriteLine($"Прямые пересекутся в точке с координатами X: {x}, Y: {y}");
 }
 
-//Zadacha41();
-Zadacha43();
+Zadacha41();
+//Zadacha43();
