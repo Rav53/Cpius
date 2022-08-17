@@ -6,9 +6,12 @@ int rows = random.Next(4, 4);
 int columns = random.Next(4, 4);
 double[,] array = new double[rows, columns];
 FillArray(array);
+Console.WriteLine($"\n Рандомный массив: ");
 PrintArray(array);
 ArraySort(array);
+Console.WriteLine($"\n Отсортированный массив: ");
 PrintArray(array);
+
 
 
 
