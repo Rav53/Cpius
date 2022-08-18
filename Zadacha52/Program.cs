@@ -18,7 +18,7 @@
             Sum += array[i,j];
             
         }
-            Console.WriteLine($"Среднее арифметическое столбцов:{Sum / array.GetLength(1)}");
+            Console.WriteLine($"Среднее арифметическое столбцов:{Sum / array.GetLength(0)}");
     }
 
 
