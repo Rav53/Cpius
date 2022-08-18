@@ -1,7 +1,6 @@
 ﻿            
             int n = 5;
-            Console.WriteLine("Введите размерность массива");
-            n = Convert.ToInt32(Console.ReadLine());
+            
             var a = GetSpire(n);
             for (int i = 0; i < n; i++)
             {
@@ -19,18 +18,18 @@
             for (int i = 0; i < n; i++)
                 for (int j = 0; j < n; j++)
                     result[i, j] = rand.Next(n, n);
-            for (int currentChar = 1, padding = 0; padding < n / 2; padding++)
+            for (int currentChar = 1, step = 0; step < n / 2; step++)
             {
-                for (int j = padding; j < n - padding; j++)
-                    result[padding, j] = currentChar;
-                for (int j = padding; j < n - padding; j++)
-                    result[n - padding - 1, j] = currentChar;
-                for (int i = padding + 2; i < n - padding - 1; i++)
-                    result[i, padding] = currentChar;
-                for (int i = padding + 1; i < n - padding - 1; i++)
-                    result[i, n - padding - 1] = currentChar;
+                for (int j = step; j < n - step; j++)
+                    result[step, j] = currentChar;
+                for (int j = step; j < n - step; j++)
+                    result[n - step - 1, j] = currentChar;
+                for (int i = step + 2; i < n - step - 1; i++)
+                    result[i, step] = currentChar;
+                for (int i = step + 1; i < n - step - 1; i++)
+                    result[i, n - step - 1] = currentChar;
                 currentChar = 1 - currentChar;
-                result[padding + 1, padding] = currentChar;
+                result[step + 1, step] = currentChar;
             }
             if (n % 2 != 0 && result[0, 0] == 1)
                 result[n / 2, n / 2] = 1;
