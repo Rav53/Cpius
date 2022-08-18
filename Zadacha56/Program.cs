@@ -18,12 +18,11 @@ void Zadacha56()
             if (sum > tempSum)
             {
                 sum = tempSum;
-                sumMin = i;
-                Console.WriteLine($"\n Cтрокa с наименьшей суммой: {i+1} , Сумма строки = {tempSum} ");
-            }       
-              
+                sumMin = i; 
+            }              
         }
-            Console.WriteLine();
+        Console.WriteLine($"\n Cтрокa с наименьшей суммой: {sumMin+1} , Сумма строки = {sum} ");
+        Console.WriteLine();
                 
 }
 
