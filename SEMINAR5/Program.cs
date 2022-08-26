@@ -120,6 +120,6 @@ void PrintArray(Double[] array)
 
 }
 //Zadacha34();
-Zadacha36();
-//Zadacha38();
+//Zadacha36();
+Zadacha38();
 
