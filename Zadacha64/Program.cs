@@ -1,6 +1,6 @@
-﻿Console.Write("Введи N: ");
+﻿Console.Write("Введите N: ");
 int N = Convert.ToInt16(Console.ReadLine());
-Console.Write("Введи M: ");
+Console.Write("Введите M: ");
 int M = Convert.ToInt16(Console.ReadLine());
 
 NormalNumber(N,M);

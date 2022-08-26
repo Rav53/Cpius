@@ -2,9 +2,9 @@
 
 //Задайте значения M и N. Напишите рекурсивный метод,
 //который найдёт сумму натуральных элементов в промежутке от M до N.
-Console.Write("Введи N: ");
+Console.Write("Введите N: ");
 int N = Convert.ToInt16(Console.ReadLine());
-Console.Write("Введи M: ");
+Console.Write("Введите M: ");
 int M = Convert.ToInt16(Console.ReadLine());
 Console.WriteLine(SumNormalNumbers(N,M,0));
 
